@@ -60,7 +60,7 @@ a{
 	float:left;
 	list-style-type:none;
 	position:relative;
-	margin-right: 54px;
+	margin-right: 3.4rem;
 }
 .slidePic li span{
 	position:absolute;
@@ -76,18 +76,18 @@ a{
 	position: absolute;
 	left: 0;
 	top: 1rem;
-	width: 40px;
-	height: 298px;
+	width: 2.5rem;
+	height: 18.625rem;
 	/*background: rgba(0,0,0,0.5);*/
 	cursor: pointer;
 }
 .slidePic .slideLeft i{
-	width:28px;
-	height: 48px;
+	width:1.75rem;
+	height: 3rem;
 	display:block;	
 	background: url('../images/icon_bg.png') no-repeat;
-	background-position:  0px -316px;
-	margin-top: 125px;
+	background-position:  0 -19.75rem;
+	margin-top: 7.8rem;
 
 }
 .slidePic .slideRight{
@@ -95,18 +95,18 @@ a{
 	position: absolute;
 	right: 0;
 	top: 1rem;
-	width: 40px;
-	height: 298px;
+	width: 2.5rem;
+	height: 18.625rem;
 	/*background:rgba(0,0,0,0.5);*/
 	cursor: pointer;
 }
 .slidePic .slideRight i{
-	width:28px;
-	height: 48px;
+	width:1.75rem;
+	height:3rem;
 	display: block;
 	background: url(../images/icon_bg.png) no-repeat;
-	background-position: -28px -316px;
-	margin-top: 125px;
+	background-position: -1.75rem -19.75rem;
+	margin-top:7.8rem;
 
 }
 
