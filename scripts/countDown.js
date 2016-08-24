@@ -8,7 +8,7 @@ $(function(){
 			var $time = $("<span>Time-Count-Down：</span><p id='time'></p><br/>");
 			// notavaliable yet
 			// var $timeA = $("<p id='c_time'>Current time:<a href='showCurrent.html'>Take a look now.</a></p>");
-			$timeA.insertBefore($inputt);
+			// $timeA.insertBefore($inputt);
 			// var $time1 = $("<p>Current Time:</p>");
 	$('.blog1 .bTitle a').click(function(){
 			$('#placeholder').toggle(500);
