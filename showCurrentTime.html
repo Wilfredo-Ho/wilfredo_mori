@@ -12,14 +12,14 @@
 </head>
 <body>
 	<div>Current Time:</div>
-	<img src="../images/img/0.jpg" alt="0" />
-	<img src="../images/img/0.jpg" alt="0" />
-	<img src="../images/img/0.jpg" alt="0" />
-	<img src="../images/img/0.jpg" alt="0" />
-	<img src="../images/img/0.jpg" alt="0" />
-	<img src="../images/img/0.jpg" alt="0" />
-	<img src="../images/img/0.jpg" alt="0" />
-	<img src="../images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
 
 
 	<script type="text/javascript">
@@ -37,19 +37,19 @@
 
 			for(var i=0;i<list.length;i++){
 				if(i== 2 || i == 5){
-					list[i].setAttribute('src','../images/img/colon.jpg');
+					list[i].setAttribute('src','./images/img/colon.jpg');
 				}else if(i<2){
-					list[i].setAttribute('src','../images/img/'+txtHtml.charAt(i)+'.jpg');
+					list[i].setAttribute('src','./images/img/'+txtHtml.charAt(i)+'.jpg');
 				}else if(i>2 && i<5){
 					var j = i;
 					j -= 1;
-					list[i].setAttribute('src','../images/img/'+txtHtml.charAt(j)+'.jpg');
+					list[i].setAttribute('src','./images/img/'+txtHtml.charAt(j)+'.jpg');
 					
 				}else{
 					var k=i;
 					k -= 2;
 					console.log(k);
-					list[i].setAttribute('src','../images/img/'+txtHtml.charAt(k)+'.jpg');
+					list[i].setAttribute('src','./images/img/'+txtHtml.charAt(k)+'.jpg');
 				}
 			}
 
