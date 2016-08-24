@@ -6,7 +6,7 @@ $(function(){
 			$inputt.appendTo($placeHolder);
 			// 创建计时容器
 			var $time = $("<span>Time-Count-Down：</span><p id='time'></p><br/>");
-			var $timeA = $("<p id='c_time'>Current time:<a href='showCurrentTIme.html'>Take a look now.</a></p>");
+			var $timeA = $("<p id='c_time'>Current time:<a href='showCurrentTime.html'>Take a look now.</a></p>");
 			$timeA.insertBefore($inputt);
 			// var $time1 = $("<p>Current Time:</p>");
 	$('.blog1 .bTitle a').click(function(){
