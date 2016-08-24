@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multiplication Tables</title>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+
+			var j=1;
+					for(var i=1;i<10;i++){
+						var $tr = $('<tr>'+i+'</tr>');
+						$tr.appendTo('tbody');
+
+						var timer = setInterval(function(){
+						if(j<10){
+							// 正向递增出现
+							
+								if(j<=i){
+									$td = $("<td>"+i+"x"+j+"="+i*j+"</td>");
+									$td.appendTo($tr);
+								}else{
+									clearInterval(timer);
+								}
+						}else{
+							// 反向递减消失
+						}	
+						},1000);	
+					}
+						
+		});
+	</script>
+
+	<style type="text/css">
+		*{
+			color:#fff;
+		}
+		table{
+			border-collapse: collapse;
+		}
+		th{
+			border:1px solid white;
+		}
+		td{
+			width:13rem;
+			height: 1.8rem;
+			border: .1rem solid #808080;
+			text-align: justify;
+			padding-left: .2rem;
+		}
+	</style>
+
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<!-- <th>9 X 9 Multiplication Tables</th> -->
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</body>
+</html>

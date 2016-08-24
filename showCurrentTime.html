@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Current Time</title>
+	<style>
+	div{
+		font-size: 3rem;
+		margin: 3rem;
+	}
+	</style>
+</head>
+<body>
+	<div>Current Time:</div>
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+	<img src="./images/img/0.jpg" alt="0" />
+
+
+	<script type="text/javascript">
+		var timer ;	//定义刷新时间
+		var list = document.getElementsByTagName('img');
+		timer = setInterval(myFunc,1000);
+		function myFunc(){
+			var date = new Date();
+			var hours = date.getHours();
+			
+			var minutes = date.getMinutes();
+			var seconds = date.getSeconds();
+
+			var txtHtml = toTwo(hours)+toTwo(minutes)+toTwo(seconds);
+
+			for(var i=0;i<list.length;i++){
+				if(i== 2 || i == 5){
+					list[i].setAttribute('src','./images/img/colon.jpg');
+				}else if(i<2){
+					list[i].setAttribute('src','./images/img/'+txtHtml.charAt(i)+'.jpg');
+				}else if(i>2 && i<5){
+					var j = i;
+					j -= 1;
+					list[i].setAttribute('src','./images/img/'+txtHtml.charAt(j)+'.jpg');
+					
+				}else{
+					var k=i;
+					k -= 2;
+					console.log(k);
+					list[i].setAttribute('src','./images/img/'+txtHtml.charAt(k)+'.jpg');
+				}
+			}
+
+			
+		}
+		
+		function toTwo(number){
+			return number>9?''+number:'0'+number;
+		}
+
+	</script>
+</body>
+</html>
