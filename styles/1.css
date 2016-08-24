@@ -5,9 +5,11 @@
 img{
 	/*max-width: 100%;*/
 }
-
+body{
+		max-width: 1366px;
+}
 #web{
-	max-width: 1366px;
+
 	float:left;
 	width: 100%;
 	/*margin: 0 auto;*/
@@ -52,21 +54,23 @@ a{
 	border-radius: 0 0 0.5rem 0.5rem; 
 }
 
-}
 .slidePic{
 	clear:both;
-	width: 90%;
+	float:left;
+	width: 100%;
 	margin:auto;
-	overflow: hidden;
-	
+	overflow: hidden;	
 	position: relative;
 	margin-bottom: 3rem;
 }
+
 .showPic{
 	width:100%; 
+	float: left;
 }
 .slidePic ul{
 	margin-top: 3rem;
+	margin-bottom: 3rem;
 	width: 300rem;
 	position: relative;
 }
@@ -76,6 +80,9 @@ a{
 	position:relative;
 	margin-right: 5.6rem;
 }
+.slidePic li:first-child{
+	margin-left: 2rem;
+}
 .slidePic li span{
 	position:absolute;
 	left: 1rem;
@@ -84,6 +91,7 @@ a{
 }
 .slidePic .btn{
 	margin-top: 3rem;
+	
 }
 .slidePic .slideLeft{
 	z-index: 1;
@@ -101,7 +109,7 @@ a{
 	display:block;	
 	background: url('../images/icon_bg.png') center no-repeat;
 	background-position:  0px -316px;
-	margin-top: 125px;
+	margin-top: 150px;
 
 }
 .slidePic .slideRight{
@@ -120,14 +128,15 @@ a{
 	display: block;
 	background: url(../images/icon_bg.png) no-repeat;
 	background-position: -28px -316px;
-	margin-top: 125px;
+	margin-top: 150px;
 
 }
 
 .slidePic .page_ind{
+	margin-left: 34.5rem;
+	margin-top: 3rem;
+	float: left;
 	color:rgba(0,100,200,0.5);
-	margin: 2rem auto;
-	
 	font-size: 1.1rem;
 	
 }
@@ -139,6 +148,8 @@ a{
 	background: #fff400;
 	color: #000;
 }
+
+
 .head{
 	width: 100%;
 	float: left;
