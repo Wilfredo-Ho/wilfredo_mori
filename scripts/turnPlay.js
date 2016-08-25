@@ -2,7 +2,7 @@ $(function(){
 		var page = 1;	//设置当前页面
 		var number = 4; 	//设置每个页面的数目
 		var current,next;
-		var time = 2000;
+		var time = 1000;
 		var interval;
 		var page_width = $('.slidePic .showPic').width();
 		// console.log("page_width:"+page_width);
@@ -11,7 +11,7 @@ $(function(){
 		// 初始化隐藏左右按键
 		$('.slidePic .btn').hide();
 		
-		$('.slidePic').hover(function(){
+		$('.slidePic ul,.btn').hover(function(){
 			stopPlay();			//停止自动放映
 			$('.slidePic .btn').show();
 		},function(){
